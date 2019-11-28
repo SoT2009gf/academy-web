@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TODO List with localStorage</title>
+
+    <style>
+        div.task {
+            height: 2em;
+            border: 1px solid black;
+            width: 15em;
+            margin-bottom: 0.5em;
+            padding: 0.5em;
+        }
+
+        div.active {
+            background-color: greenyellow;
+            text-decoration: none;
+        }
+
+        div.done {
+            background-color: lightgrey;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h2>Interface</h2>
+            <form>
+                <label>New Task:
+                    <input type="text" name="nTaskName" id="nTaskName">
+                </label>
+                <button type="submit" id="btAddTask">Add task</button>
+                <button type="button" id="btRemoveTask">Remove completed tasks</button>
+            </form>
+        </section>
+        <section id="tasks">
+            <h2>Tasks</h2>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js\/jquery.min.js"><\/script>');
+    </script>
+    <script src="js/TODOListLocal.js"></script>
+</body>
+
+</html>

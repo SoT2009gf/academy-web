@@ -97,6 +97,7 @@ dl dt {
 
 img {
     float: right;
+    max-width: 15rem;
 }
 
 .fas, .fab {

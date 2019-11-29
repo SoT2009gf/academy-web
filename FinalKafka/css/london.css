@@ -1,0 +1,85 @@
+p {
+    text-align: justify;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    display: block;
+}
+
+a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+td, th {
+    text-align: center;
+}
+
+table, table th {
+    border-style: solid;
+    border-width: 0.2rem;
+    margin: auto;
+}
+
+table td {
+    border-style: solid;
+    border-width: 0.1rem;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.back {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+nav, #pagestyle, #links {
+    float: right;
+    text-align: right;
+    margin-bottom: 2em;
+}
+
+figure, #weatherinfo {
+    float: left;
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+    
+    nav, aside, figure {
+        visibility: hidden;
+        display: none;
+    }
+}

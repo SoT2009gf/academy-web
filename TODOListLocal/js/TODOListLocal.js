@@ -57,13 +57,12 @@ function addTaskToHTML(taskObj, $whereToAdd) {
     }
 }
 
-$removeButton.on("click", function (event) {
-    event.preventDefault();
-    for (let i = 0; i < tasks.length; i++) {
+$removeButton.on("click", function () {        
+    for (let i = tasks.length - 1; i >= 0; i--) {
         if (tasks[i].isDone) {
-            $(".done").remove();
             tasks.splice(i, 1);
         }
-    }
+    }    
     localStorage.todoTasks = JSON.stringify(tasks);
+    $(".done").remove();
 });

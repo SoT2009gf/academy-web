@@ -12,7 +12,6 @@ var nextId = 0;
 
 const $tasksElm = $("#tasks");
 const $addButton = $("#btAddTask");
-const $removeButton = $("#btRemoveTask");
 const $input = $("#nTaskName");
 
 for (let i = 0, len = tasks.length; i < len; i++) {
@@ -57,7 +56,7 @@ function addTaskToHTML(taskObj, $whereToAdd) {
     }
 }
 
-$removeButton.on("click", function () {        
+$("#btRemoveTask").on("click", function () {        
     for (let i = tasks.length - 1; i >= 0; i--) {
         if (tasks[i].isDone) {
             tasks.splice(i, 1);
